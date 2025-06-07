@@ -1,0 +1,368 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+  }
+  .font-size{
+    font-size: 40px;
+  }
+
+  .filters {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-body {
+    display: flex;
+  }
+  
+  .modal-header, .modal-footer {
+    padding: 20px;
+    background: white;
+  }
+  
+  .modal > div {
+    background: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+  }
+  
+  .button-size{
+    font-size: 20px;
+    color: #ccc;
+   
+  }
+
+  .filters button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .box{
+    width: 2000px;
+    height: 500px;
+    background-color: #f1f0f3;
+  }
+  .container {
+    max-width: 1600px;
+    
+    margin: auto;
+    padding-bottom: 100px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h2 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .controls .arrow {
+    width: 30px;
+    height: 30px;
+    background-color: #e2e2e7;
+    border: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .slider-wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 10px;
+    height: 280px;
+    width: 100%;
+  }
+  
+  .slider {
+    display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  overflow-y: hidden; 
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 250px;
+  }
+  .slider::-webkit-scrollbar {
+  display: none;               
+}
+  .slide {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    
+  }
+  
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    padding: 0; 
+  }
+  .slides{
+    width: 400px;
+    height: 100%;
+    background: white;
+    border-radius: 50%;
+    box-shadow: #333;
+  }
+   img{
+    border-radius: 50px;
+    padding: 40px;
+  }
+  .slides1{
+    width: 400px;
+    height: 100%;
+    background: rgb(255, 153, 0);
+    border-radius: 50%;
+  }
+  
+  .slides2{
+    width: 400px;
+    height: 100%;
+    background: rgb(167, 3, 3);
+    border-radius: 50%;
+  }
+  .slides3{
+    width: 400px;
+    height: 100%;
+    background: rgb(184, 175, 55);
+    border-radius: 50%;
+  }
+ /* --------------------card-------------------  */
+ .divv{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 100px;
+  }
+  .divv1{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 100px;
+  }
+ .card {
+    min-width: 120px;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  .card img {
+    width: 250px;
+    height: 350px;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .card p {
+    margin-top: 8px;
+    font-size: 14px;
+  }
+  #imm{
+    height: 300px;
+    width: 1100px;
+  }
+  .divv{
+    display: flex;
+  }
+  .divv1{
+    display: flex;
+    margin-top: 50px;
+  }
+  .card-box {
+    border: solid 2px whitesmoke;
+    border-radius: 15px;
+    height: 450px;
+    width: 500px;
+    margin-left: 45px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden; 
+  }
+  
+  .card-box:hover {
+    box-shadow: 0 10px 10px rgba(236, 39, 39, 0.3);
+  }
+  .card-box1 {
+    border: solid 2px whitesmoke;
+    border-radius: 15px;
+    height: 450px;
+    width: 500px;
+    margin-left: 45px;
+    transition: box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+  
+  .card-box1:hover {
+    box-shadow: 0 10px 10px rgba(236, 39, 39, 0.3);
+  }
+  
+  .card1 {
+    height: 250px;
+    width: 400px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    /* border-radius: 15px; */
+    object-fit: cover;
+  }
+  
+  .card2{
+    height: 250px;
+    width: 400px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    
+  }
+  .card5 {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: white;
+  }
+  
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  
+  .title-rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+  }
+  
+  .rating {
+    background-color: #48c479;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .cuisine {
+    color: #6e6e6e;
+    font-size: 14px;
+  }
+  
+  .price-distance {
+    font-size: 13px;
+    color: #a0a0a0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .price{
+    margin-left: 215px;
+  }
+  
+  .location {
+    font-size: 13px;
+  }
+  .loc{
+    display: flex;
+  }
+  
+  .distance {
+    font-weight: bold;
+    color: #000;
+    align-self: flex-end;
+  }
+  .s1{
+    margin-left: 410px;
+  }
+  .footer {
+    background-color: #f8f8f8;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+    color: #555;
+    border-top: 1px solid #ddd;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-column {
+    flex: 1 1 180px;
+  }
+  
+  .footer-column h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+  }
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    font-size: 13px;
+    margin-bottom: 8px;
+    cursor: pointer;
+  }
+  
+  .footer-column ul li:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons span {
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .app-badges img {
+    width: 120px;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+  }
